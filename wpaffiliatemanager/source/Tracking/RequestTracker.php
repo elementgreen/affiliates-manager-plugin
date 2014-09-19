@@ -212,7 +212,7 @@ class WPAM_Tracking_RequestTracker {
 			$trackTokenModel->referer = isset( $_SERVER['HTTP_REFERER'] ) ? $_SERVER['HTTP_REFERER'] : NULL;
 
 			if ( isset( $request['wpam_affiliateSubCode'] ) ) {
-				$trackTokenModel->affiliateSubCode = $request['affiliateSubCode'];
+				$trackTokenModel->affiliateSubCode = $request['wpam_affiliateSubCode'];
 			}
 
 			$db->getTrackingTokenRepository()->insert( $trackTokenModel );
