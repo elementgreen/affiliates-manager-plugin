@@ -1,0 +1,19 @@
+* text=auto
+
+*.css text
+*.html text diff=html
+*.js text
+*.php text
+*.po text
+*.pot text
+*.txt text
+*.xml text
+
+*.gif binary
+*.ico binary
+*.jpg binary
+*.mo binary
+*.png binary
+
+nbproject/* eol=crlf
+
