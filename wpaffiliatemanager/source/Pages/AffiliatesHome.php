@@ -380,6 +380,9 @@ class WPAM_Pages_AffiliatesHome extends WPAM_Pages_PublicPage
 
 		$response->viewData['creativeNames'] = $creativeNames;
 
+		$where = array('sourceAffiliateId' => $affiliate->affiliateId);
+		$response->viewData['impressionCount'] = $db->getImpressionRepository()->count ( $where );
+
 		return $response;
 	}
 
